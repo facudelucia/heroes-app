@@ -1,7 +1,4 @@
-import React from 'react';
 import {heroes} from "../data/heroes";
-
-
 
 const getHeroByName = (name = "") => {
     if(name === ""){

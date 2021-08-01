@@ -8,7 +8,7 @@ const HeroList = ({publisher}) => {
     return ( 
         <div className="card-columns animate__animated animate__fadeIn">
             {heroes.map(hero=>{
-                return <HeroCard key={hero.id} hero={hero} />
+                return <HeroCard key={hero.id} { ...hero } />
             })}
         </div>
      );

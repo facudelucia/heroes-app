@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const HeroCard = ({hero}) => {
-    const {id, superhero, publisher, alter_ego, first_appearance, characters} = hero;
+const HeroCard = ({id, superhero, alter_ego, first_appearance, characters} ) => {
     return ( 
-        <div className="card ms-3" style={{maxWidth: 540}}>
+        <div className="card ms-3 animate__animated animate__fadeIn" style={{maxWidth: 540}}>
             <div className="row no-gutters">
                 <div className="col-sm-4">
                     <img src={`./assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />
